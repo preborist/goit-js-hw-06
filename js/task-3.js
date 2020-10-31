@@ -96,10 +96,7 @@ const users =  [
   },
 ];
 
-const getUsersWithGender = (array, gender) => array.filter(user => user.gender === gender).map(function ({ name }){
-    return name;
-});
-
+const getUsersWithGender = (array, gender) => array.filter(array => array.gender === gender).map(({name}) => name);
 
 console.log(getUsersWithGender(users, 'male'));
 

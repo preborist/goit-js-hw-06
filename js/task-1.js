@@ -33,11 +33,14 @@ const users = [
     "Sheree Anthony",
 ];
 
-const getUserNames = array => array.map(function ({ name }){
-    return name;
-});
+// const getUserNames = array => array.map(function ({ name }){
+//     return name;
+// });
 
-console.log(users);
+const getUserNames = array => array.map(({name}) => name);
+
+
+console.log(getUserNames(users));
 
 /* [
   "Moore Hensley",
